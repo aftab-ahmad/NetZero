@@ -58,6 +58,16 @@
             </intent-filter>
         </activity>
 
+        <activity
+            android:name=".TotalBillActivity"
+            android:parentActivityName=".MainActivity">
+
+            <intent-filter>
+                <action android:name=".TotalBillActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
 
 
     </application>

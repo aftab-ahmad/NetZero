@@ -70,6 +70,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
             android:weightSum="3"
             android:layout_below="@+id/passwordField">
 

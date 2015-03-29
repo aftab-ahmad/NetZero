@@ -51,7 +51,7 @@ public class BudgetFragment extends Fragment {
                         EditText interval = (EditText) dialogLayout.findViewById(R.id.intervalField);
 
                         //Toast.makeText(getActivity().getApplicationContext(), ""+payment + " " + interval  , Toast.LENGTH_SHORT).show();
-                        if (Integer.parseInt(interval.getText().toString()) == 0) {
+                        if (interval.getText().length() == 0) {
                             Toast.makeText(getActivity().getApplicationContext(), "Please enter a valid value."  , Toast.LENGTH_SHORT).show();
                         }
                         else {
