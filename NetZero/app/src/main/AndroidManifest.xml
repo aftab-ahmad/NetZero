@@ -68,6 +68,25 @@
             </intent-filter>
         </activity>
 
+        <activity
+            android:name=".LeaderboardTabAndList"
+            android:parentActivityName=".MainActivity">
+
+            <intent-filter>
+                <action android:name="LeaderboardTabandList" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".LeaderboardActivity"
+            android:parentActivityName=".LeaderboardTabAndList">
+
+            <intent-filter>
+                <action android:name="LeaderboardActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
 
 
     </application>

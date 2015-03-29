@@ -37,10 +37,19 @@ public class DashboardFragment extends Fragment{
         });
 
         CardView cardView2 = (CardView) view.findViewById(R.id.card_view1);
-        cardView1.setOnClickListener(new View.OnClickListener() {
+        cardView2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getActivity().getApplicationContext(), TotalBillActivity.class);
+                startActivity (intent);
+            }
+        });
+
+        CardView cardView3 = (CardView) view.findViewById(R.id.card_view2);
+        cardView3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity().getApplicationContext(), LeaderboardTabAndList.class);
                 startActivity (intent);
             }
         });
