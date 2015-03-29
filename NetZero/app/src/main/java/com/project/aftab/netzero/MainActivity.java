@@ -36,8 +36,6 @@ public class MainActivity extends ActionBarActivity {
         tabs.setTextColor(Color.WHITE);
         tabs.setDividerColor(Color.WHITE);
 
-
-
         pager.setAdapter(tabAdapter);
 
         final int pageMargin = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 4, getResources()
@@ -45,8 +43,6 @@ public class MainActivity extends ActionBarActivity {
         pager.setPageMargin(pageMargin);
 
         tabs.setViewPager(pager);
-
-
     }
 
 

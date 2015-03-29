@@ -31,10 +31,13 @@ public class PagerAdapter extends FragmentPagerAdapter {
 
         switch (position)
         {
-            case 0: // show favourites
-                return SuperAwesomeCardFragment.newInstance(position);
+            case 0: // show budget
+                BudgetFragment budgetFragment = new BudgetFragment();
+                data.putInt("current_page", position+1);
+                budgetFragment.setArguments(data);
+                return budgetFragment;
 
-            case 1: // show nextbux
+            case 1: // show dashboard
                 return SuperAwesomeCardFragment.newInstance(position);
 
             case 2:

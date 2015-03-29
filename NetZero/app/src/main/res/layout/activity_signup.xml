@@ -62,9 +62,57 @@
             android:textColor="@android:color/holo_blue_dark"
             android:layout_below="@+id/usernameField"/>
 
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/layout1"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_below="@+id/passwordField">
+
+            <ImageView
+                android:elevation="3dp"
+                android:layout_marginTop="30dp"
+                android:id="@+id/Package1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Package 1"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="1"
+                style="?android:attr/borderlessButtonStyle" />
+
+            <ImageView
+                android:elevation="3dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:id="@+id/Package2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Package 2"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="1"
+                style="?android:attr/borderlessButtonStyle" />
+
+            <ImageView
+                android:elevation="3dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/Package3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Package 3"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="1"
+                style="?android:attr/borderlessButtonStyle" />
+
+        </LinearLayout>
+
         <Button
             android:elevation="3dp"
-            android:layout_below="@+id/passwordField"
+            android:layout_below="@+id/layout1"
             android:layout_marginTop="30dp"
             android:id="@+id/submit"
             android:onClick="Submit"
@@ -74,8 +122,6 @@
             android:background="@drawable/selector"
             android:layout_centerHorizontal="true"
             style="?android:attr/borderlessButtonStyle" />
-
-
 
     </RelativeLayout>
 </LinearLayout>
