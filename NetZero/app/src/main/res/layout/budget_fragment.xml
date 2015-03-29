@@ -49,10 +49,9 @@
                     android:id="@+id/graph"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@mipmap/ic_launcher"
+                    android:src="@drawable/images1"
                     android:layout_below="@id/title2"
                     android:layout_marginTop="10dp"
-                    android:layout_marginStart="5dp"
                     android:layout_marginLeft="5dp"/>
 
                 <TextView
@@ -65,8 +64,6 @@
                     android:text="$22.00/$50.00"
                     android:layout_toRightOf="@+id/graph"
                     android:layout_marginTop="10dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginStart="5dp"
                     android:layout_marginBottom="5dp"/>
             </RelativeLayout>
         </android.support.v7.widget.CardView>
@@ -289,7 +286,7 @@
                     android:id="@+id/graph3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@mipmap/ic_launcher"
+                    android:src="@drawable/doublegraph"
                     android:layout_below="@id/month2"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="10dp"

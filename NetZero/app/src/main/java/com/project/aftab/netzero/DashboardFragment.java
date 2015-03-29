@@ -27,6 +27,15 @@ public class DashboardFragment extends Fragment{
             }
         });
 
+        CardView cardView1 = (CardView) view.findViewById(R.id.card_view);
+        cardView1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity().getApplicationContext(), RateActivity.class);
+                startActivity (intent);
+            }
+        });
+
         return view;
     }
 

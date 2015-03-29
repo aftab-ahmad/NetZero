@@ -3,6 +3,8 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <include layout="@layout/toolbar" />
+
     <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent">
@@ -54,7 +56,7 @@
                             android:layout_width="fill_parent"
                             android:layout_height="wrap_content"
                             android:textSize="30sp"
-                            android:textColor="@android:color/holo_blue_dark"
+                            android:textColor="@color/colorPrimaryDark"
                             android:text="1.27 KJ/H"
                             android:layout_below="@+id/title2"
                             android:layout_centerHorizontal="true" />
@@ -106,7 +108,7 @@
                                 android:gravity="center_vertical"
                                 android:text="1.23 KJ/H"
                                 android:textSize="30sp"
-                                android:textColor="@android:color/holo_blue_dark"
+                                android:textColor="@color/colorPrimaryDark"
                                 android:layout_below="@id/title"
                                 android:layout_marginTop="10dp"
                                 android:layout_marginStart="5dp"
@@ -152,7 +154,7 @@
                                 android:gravity="center_vertical"
                                 android:text="2 Days Remaining"
                                 android:textSize="15sp"
-                                android:textColor="@android:color/holo_blue_dark"
+                                android:textColor="@color/colorPrimaryDark"
                                 android:layout_below="@id/title1"
                                 android:layout_marginTop="10dp"
                                 android:layout_marginStart="5dp"
