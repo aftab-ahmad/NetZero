@@ -38,7 +38,10 @@ public class PagerAdapter extends FragmentPagerAdapter {
                 return budgetFragment;
 
             case 1: // show dashboard
-                return SuperAwesomeCardFragment.newInstance(position);
+                DashboardFragment dashboardFragment = new DashboardFragment();
+                data.putInt("current_page", position+1);
+                dashboardFragment.setArguments(data);
+                return dashboardFragment;
 
             case 2:
                 return SuperAwesomeCardFragment.newInstance(position);

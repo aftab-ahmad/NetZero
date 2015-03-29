@@ -19,7 +19,7 @@
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:hint="First Name"
-            android:textColor="@android:color/holo_blue_dark"
+            android:textColor="@color/colorPrimaryDark"
             android:layout_centerHorizontal="true"/>
 
         <EditText
@@ -29,7 +29,7 @@
             android:layout_centerHorizontal="true"
             android:layout_height="wrap_content"
             android:hint="Last Name"
-            android:textColor="@android:color/holo_blue_dark"
+            android:textColor="@color/colorPrimaryDark"
             android:layout_below="@+id/fNameField"/>
 
         <EditText
@@ -39,7 +39,7 @@
             android:layout_centerHorizontal="true"
             android:layout_height="wrap_content"
             android:hint="Email"
-            android:textColor="@android:color/holo_blue_dark"
+            android:textColor="@color/colorPrimaryDark"
             android:layout_below="@+id/lNameField"/>
 
         <EditText
@@ -49,7 +49,7 @@
             android:layout_centerHorizontal="true"
             android:layout_height="wrap_content"
             android:hint="Username"
-            android:textColor="@android:color/holo_blue_dark"
+            android:textColor="@color/colorPrimaryDark"
             android:layout_below="@+id/emailField"/>
 
         <EditText
@@ -59,7 +59,7 @@
             android:layout_centerHorizontal="true"
             android:layout_height="wrap_content"
             android:hint="Password"
-            android:textColor="@android:color/holo_blue_dark"
+            android:textColor="@color/colorPrimaryDark"
             android:layout_below="@+id/usernameField"/>
 
         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -75,50 +75,44 @@
 
             <ImageView
                 android:elevation="3dp"
-                android:layout_marginTop="30dp"
                 android:id="@+id/Package1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Package 1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/the_plain_jane"
                 android:layout_centerHorizontal="true"
-                android:layout_weight="1"
                 style="?android:attr/borderlessButtonStyle" />
 
             <ImageView
                 android:elevation="3dp"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="30dp"
                 android:id="@+id/Package2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Package 2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/the_benefactor"
                 android:layout_centerHorizontal="true"
-                android:layout_weight="1"
                 style="?android:attr/borderlessButtonStyle" />
 
             <ImageView
                 android:elevation="3dp"
-                android:layout_marginTop="30dp"
-                android:layout_marginLeft="10dp"
                 android:id="@+id/Package3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Package 3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/the_socialite"
                 android:layout_centerHorizontal="true"
-                android:layout_weight="1"
                 style="?android:attr/borderlessButtonStyle" />
 
         </LinearLayout>
 
         <Button
+            android:layout_marginTop="10dp"
             android:elevation="3dp"
             android:layout_below="@+id/layout1"
-            android:layout_marginTop="30dp"
             android:id="@+id/submit"
             android:onClick="Submit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Submit"
+            android:textColor="@android:color/white"
             android:background="@drawable/selector"
             android:layout_centerHorizontal="true"
             style="?android:attr/borderlessButtonStyle" />

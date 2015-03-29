@@ -51,11 +51,14 @@ public class BudgetFragment extends Fragment {
                         EditText interval = (EditText) dialogLayout.findViewById(R.id.intervalField);
 
                         //Toast.makeText(getActivity().getApplicationContext(), ""+payment + " " + interval  , Toast.LENGTH_SHORT).show();
-
-
-                        double perWeek = Integer.parseInt(payment.getText().toString()) / Integer.parseInt(interval.getText().toString());
-                        Toast.makeText(getActivity().getApplicationContext(), "Budget of: $"+perWeek + " set!"  , Toast.LENGTH_SHORT).show();
-                        dialog.dismiss();
+                        if (Integer.parseInt(interval.getText().toString()) == 0) {
+                            Toast.makeText(getActivity().getApplicationContext(), "Please enter a valid value."  , Toast.LENGTH_SHORT).show();
+                        }
+                        else {
+                            double perWeek = Integer.parseInt(payment.getText().toString()) / Integer.parseInt(interval.getText().toString());
+                            Toast.makeText(getActivity().getApplicationContext(), "Budget of: $" + perWeek + " set!", Toast.LENGTH_SHORT).show();
+                            dialog.dismiss();
+                        }
                     }
                 });
             }

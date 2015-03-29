@@ -15,7 +15,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:textSize="25sp"
-            android:textColor="@android:color/holo_blue_dark"
+            android:textColor="@color/colorPrimaryDark"
             android:gravity="center_horizontal"
             android:text="Payment of:"
             android:paddingBottom="10dp"/>
@@ -25,7 +25,7 @@
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:hint="Number"
-            android:textColor="@android:color/holo_blue_dark"
+            android:textColor="@color/colorPrimaryDark"
             android:layout_centerHorizontal="true"
             android:layout_below="@+id/Payment"
             android:inputType="phone"/>
@@ -36,7 +36,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:textSize="25sp"
-            android:textColor="@android:color/holo_blue_dark"
+            android:textColor="@color/colorPrimaryDark"
             android:gravity="center_horizontal"
             android:text="Split into:"
             android:paddingTop="10dp"
@@ -47,7 +47,7 @@
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:hint="Number"
-            android:textColor="@android:color/holo_blue_dark"
+            android:textColor="@color/colorPrimaryDark"
             android:layout_centerHorizontal="true"
             android:layout_below="@+id/interval"
             android:inputType="phone"/>
@@ -59,6 +59,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Solve"
+            android:textColor="@android:color/white"
             android:layout_centerHorizontal="true"
             android:background="@drawable/selector"
             android:layout_marginTop="10dp"

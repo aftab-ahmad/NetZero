@@ -14,7 +14,7 @@
         android:layout_height="48dp"
         android:background="@color/colorPrimary"
         app:pstsDividerColor="#00000000"
-        app:pstsIndicatorColor="#FF33B5E6"
+        app:pstsIndicatorColor="@color/colorPrimaryDark"
         app:pstsTabPaddingLeftRight="14dp"
         app:pstsUnderlineColor="@color/action_bar"/>
 
